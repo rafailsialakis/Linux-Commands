@@ -43,7 +43,7 @@
             <pre><code>./grep example text.txt</code></pre>
         </li>
         <li><strong>cat</strong>: Print the content of a file:
-            <pre><code>./cat file1.txt file2.txt</code></pre>
+            <pre><code>./cat file1.txt</code></pre>
         </li>
         <li><strong>echo</strong>: Print the message "Hello, world!":
             <pre><code>./echo "Hello, world!"</code></pre>
