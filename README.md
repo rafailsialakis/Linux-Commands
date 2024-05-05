@@ -21,15 +21,15 @@
             <pre><code>git clone &lt;repository_url&gt;</code></pre>
         </li>
         <li>Compile the source code:
-            <pre><code>gcc -o grep grep.c<br>gcc -o cat cat.c<br>gcc -o echo echo.c</code></pre>
+            <pre><code>gcc -o grep grep.c <br>gcc -o cat cat.c <br>gcc -o echo echo.c </code></pre>
         </li>
         <li>Run the commands:
             <ul>
                 <li>For <code>grep</code>:
-                    <pre><code>./grep &lt;pattern&gt; &lt;file1&gt; &lt;file2&gt; ...</code></pre>
+                    <pre><code>./grep &lt;pattern&gt; &lt;file1&gt; ...</code></pre>
                 </li>
                 <li>For <code>cat</code>:
-                    <pre><code>./cat &lt;file1&gt; &lt;file2&gt; ...</code></pre>
+                    <pre><code>./cat &lt;file1&gt; ...</code></pre>
                 </li>
                 <li>For <code>echo</code>:
                     <pre><code>./echo &lt;message&gt;</code></pre>
