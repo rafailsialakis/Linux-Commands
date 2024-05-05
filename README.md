@@ -20,9 +20,6 @@
         <li>Clone the repository:
             <pre><code>git clone &lt;repository_url&gt;</code></pre>
         </li>
-        <li>Checkout to this branch:
-            <pre><code>git checkout &lt;branch_name&gt;</code></pre>
-        </li>
         <li>Compile the source code:
             <pre><code>gcc -o grep grep.c<br>gcc -o cat cat.c<br>gcc -o echo echo.c</code></pre>
         </li>
