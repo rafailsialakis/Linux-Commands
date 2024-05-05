@@ -46,7 +46,7 @@
         <li><strong>grep</strong>: Search for the word "example" in a file named "text.txt":
             <pre><code>./grep example text.txt</code></pre>
         </li>
-        <li><strong>cat</strong>: Concatenate the contents of two files named "file1.txt" and "file2.txt":
+        <li><strong>cat</strong>: Print the content of a file:
             <pre><code>./cat file1.txt file2.txt</code></pre>
         </li>
         <li><strong>echo</strong>: Print the message "Hello, world!":
