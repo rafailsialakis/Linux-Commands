@@ -18,7 +18,7 @@
     <h2>How to Use</h2>
     <ol>
         <li>Clone the repository:
-            <pre><code>git clone &lt;repository_url&gt;</code></pre>
+            <pre><code>git clone &lt;https://github.com/rafailsialakis/Linux-Commands&gt;</code></pre>
         </li>
         <li>Compile the source code:
             <pre><code>gcc -o grep grep.c <br>gcc -o cat cat.c <br>gcc -o echo echo.c </code></pre>
