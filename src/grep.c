@@ -1,9 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <time.h>
-
-void argchecker(int argc, char* argv[]);
+#include "../include/grep.h"
 
 int main(int argc, char* argv[]){
     argchecker(argc, argv);
@@ -33,7 +28,7 @@ int main(int argc, char* argv[]){
         }
     }
 
-    size_t psize = strlen(pattern); //Length of the pattern  
+    int psize = strlen(pattern); //Length of the pattern  
     int fFlag;  //Flag that is used in order to check if a pattern is found. If found fFlag = 1. 
     int cFound = 0; //Counts how many times the pattern was found.
 

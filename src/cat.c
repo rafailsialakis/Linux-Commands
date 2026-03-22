@@ -4,21 +4,6 @@
 #include <string.h>
 #include <unistd.h>
 
-void manual()
-{
-    FILE *manual;
-    char ch;
-
-    manual = fopen(".man.txt", "r");
-    while(ch != EOF)
-    {
-        ch = fgetc(manual);
-        if (ch != EOF)
-            printf("%c", ch);
-    }
-    fclose(manual);
-}
-
 int main(int argc, char* argv[])
 {
     FILE *file;
@@ -34,11 +19,6 @@ int main(int argc, char* argv[])
         }    
     }
     else if (argc == 2){
-        if (!strcmp(argv[1],"--help")){          
-            manual();
-            exit(1);
-        }
-        
         if (access(filename, F_OK) == 0){
         
             file = fopen(filename, "r");

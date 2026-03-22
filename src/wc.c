@@ -1,7 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-
-void argchecker(int argc, char* argv[]);
+#include "../include/wc.h"
 
 int main(int argc, char* argv[]){
     argchecker(argc,argv);
