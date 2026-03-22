@@ -1,54 +1,83 @@
 # Linux-Commands
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-    <h1>Linux Command Implementation in C</h1>
-    <p>This branch contains implementations of three commonly used Linux commands - <code>grep</code>, <code>cat</code>, and <code>echo</code> - written in the C programming language.</p>
-    <h2>Commands Implemented</h2>
-    <ol>
-        <li><strong>grep</strong>: Searches for a specified pattern in one or more files.</li>
-        <li><strong>cat</strong>: Concatenates files and prints them to standard output.</li>
-        <li><strong>echo</strong>: Prints its arguments to standard output.</li>
-    </ol>
-    <h2>How to Use</h2>
-    <ol>
-        <li>Clone the repository:
-            <pre><code>git clone &lt;https://github.com/rafailsialakis/Linux-Commands&gt;</code></pre>
-        </li>
-        <li>Compile the source code:
-            <pre><code>gcc -o grep grep.c <br>gcc -o cat cat.c <br>gcc -o echo echo.c </code></pre>
-        </li>
-        <li>Run the commands:
-            <ul>
-                <li>For <code>grep</code>:
-                    <pre><code>./grep &lt;pattern&gt; &lt;file1&gt; ...</code></pre>
-                </li>
-                <li>For <code>cat</code>:
-                    <pre><code>./cat &lt;file1&gt; ...</code></pre>
-                </li>
-                <li>For <code>echo</code>:
-                    <pre><code>./echo &lt;message&gt;</code></pre>
-                </li>
-            </ul>
-        </li>
-    </ol>
-    <h2>Examples</h2>
-    <ul>
-        <li><strong>grep</strong>: Search for the word "example" in a file named "text.txt":
-            <pre><code>./grep example text.txt</code></pre>
-        </li>
-        <li><strong>cat</strong>: Print the content of a file:
-            <pre><code>./cat file1.txt</code></pre>
-        </li>
-        <li><strong>echo</strong>: Print the message "Hello, world!":
-            <pre><code>./echo "Hello, world!"</code></pre>
-        </li>
-    </ul>
+## Linux Command Implementation in C
 
-</body>
-</html>
+This repository contains implementations of commonly used Linux commands written in C. The goal of this project is to understand how basic Unix utilities work at a low level.
+
+## Commands Implemented
+
+1. **grep**: Searches for a specified pattern in one or more files
+2. **cat**: Concatenates files and prints them to standard output
+3. **echo**: Prints its arguments to standard output
+4. **wc**: Counts lines, words, and characters in a file
+
+## Project Structure
+
+```
+.
+├── bin/
+├── include/
+├── src/
+├── Makefile
+└── README.md
+```
+
+## How to Use
+
+1. Clone the repository:
+
+```
+git clone https://github.com/rafailsialakis/Linux-Commands
+cd Linux-Commands
+```
+
+2. Compile the project using Make:
+
+```
+make
+```
+
+This will generate the executables inside the `bin/` directory.
+
+3. Run the commands:
+
+* grep:
+
+```
+./bin/grep <pattern> <file1> ...
+```
+
+* cat:
+
+```
+./bin/cat <file1> ...
+```
+
+* echo:
+
+```
+./bin/echo <message>
+```
+
+* wc:
+
+```
+./bin/wc <file>
+```
+
+## Examples
+
+```
+./bin/grep example text.txt
+./bin/cat file.txt
+./bin/echo "Hello, world!"
+./bin/wc file.txt
+```
+
+## Clean
+
+To remove compiled files:
+
+```
+make clean
+```
